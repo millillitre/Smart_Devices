@@ -14,9 +14,9 @@ On a un module LoRa [RN2483](/docs/RN2483_datasheet.pdf) dont on va souder seule
 -  `3v3`
 -  `RST` : reset
 -  Les 4 bus de communication UART:
-  -  `RTS`
-  -  `CTS`
-  -  `RX`
-  -  `TX`
+   -  `RTS`
+   -  `CTS`
+   -  `RX`
+   -  `TX`
 
 ### Fabrication du PCB
