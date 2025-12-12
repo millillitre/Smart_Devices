@@ -1,22 +1,28 @@
 # Smart Devices
 
-## AIME
+Développé par Marie-Lien Da Costa Bento, Célian Hilal Hamdan et Jean-Phillipe Loubejac--Combalbert pour le cours *Microcontroller and Open Source Hardware*.
 
-## Datasheet
+## Organisation
 
-## Analog Electronic Lab
+Dans ce repo, vous pourrez trouver:
 
-## M&OSH
-### Soudure
-On a un module LoRa [RN2483](/docs/RN2483_datasheet.pdf) dont on va souder seulement les pins qui nous intéresse sur une carte fille:
--  `GND` : la terre
--  `Vin` : tension d'alimentation dont on aura besoin pour alimenter notre capteur
--  `3v3`
--  `RST` : reset
--  Les 4 bus de communication UART:
-   -  `RTS`
-   -  `CTS`
-   -  `RX`
-   -  `TX`
+- sur la branche *main*:
+  - les fichiers de simulation [LTSpice](/LTSpice/)
+  - fichiers de schémas et de routage [KiCad](/KiCAD/)
+  - le [code Arduino](/Arduino/) pour le capteur
+  - le montage du [transceiver LoRa](/LoRa)
+  - la datasheet de notre capteur
+  - README.md
 
-### Fabrication du PCB
+## Usage
+
+
+## Le capteur de GAZ effectué à l'AIME
+
+## Amplification du signal
+
+## Conception du PCB via KiCAD
+
+## Programmation du capteur et transmission via LoRa
+
+## Node-RED
