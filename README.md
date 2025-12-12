@@ -7,15 +7,14 @@ Développé par Marie-Lien Da Costa Bento, Célian Hilal Hamdan et Jean-Phillipe
 Dans ce repo, vous pourrez trouver:
 
 - sur la branche *main*:
-  - les fichiers de simulation [LTSpice](/LTSpice/)
-  - fichiers de schémas et de routage [KiCad](/KiCAD/)
-  - le [code Arduino](/Arduino/) pour le capteur
-  - le montage du [transceiver LoRa](/LoRa)
-  - la datasheet de notre capteur
+  - Les fichiers de simulation [LTSpice](/LTSpice/)
+  - Les fichiers de schémas et de routage [KiCad](/KiCAD/)
+  - Le [code Arduino](/Arduino/) pour le capteur
+  - Le montage du [transceiver LoRa](/LoRa) pour notre réseau et sa [configuration arduino](/LoRa/LoRaConnection.ino).
+  - La datasheet de notre capteur.
   - README.md
 
 ## Usage
-
 
 ## Le capteur de GAZ effectué à l'AIME
 
@@ -25,4 +24,4 @@ Dans ce repo, vous pourrez trouver:
 
 ## Programmation du capteur et transmission via LoRa
 
-## Node-RED
+## Node-RED?
