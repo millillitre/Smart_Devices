@@ -24,4 +24,6 @@ Dans ce repo, vous pourrez trouver:
 
 ## Programmation du capteur et transmission via LoRa
 
+Les communications sont accessibles sur [https://srv-chirpstack.insa-toulouse.fr](chirpstack).
+
 ## Node-RED?

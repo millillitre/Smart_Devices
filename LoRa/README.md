@@ -14,4 +14,7 @@ On a un module LoRa [RN2483](/docs/RN2483_datasheet.pdf) dont on va souder seule
   - `RX`
   - `TX`
 
-![Le transceiver LoRa](/docs/LoRaTransceiver.jpg)
+## Quelques photos
+
+- ![Le transceiver LoRa](/docs/LoRaTransceiver.jpg)
+- ![La connexion du trasnceiver à une carte Arduino](/docs/LoRa_connection.jpg) avec une potentiomètre.
