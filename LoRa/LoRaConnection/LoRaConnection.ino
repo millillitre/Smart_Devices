@@ -44,8 +44,8 @@ void initialize_radio()
     // Join via OTAA
     Serial.println("Trying to join Chirpstack");
     bool join_result = false;
-    const char *Eui = ""; // Here put the AppEUI provided by Chirpstack
-    const char *Key = ""; // Here put the AppKey provided by Chirpstack
+    const char *Eui = "059e6eb52f689162"; // Here put the AppEUI provided by Chirpstack
+    const char *Key = "d56f6d7d3433ed17318e00ec3dd543d2"; // Here put the AppKey provided by Chirpstack
     join_result = Lora.initOTAA(Eui, Key);
 
     while (!join_result)
