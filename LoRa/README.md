@@ -14,7 +14,13 @@ On a un module LoRa [RN2483](/docs/RN2483_datasheet.pdf) dont on va souder seule
   - `RX`
   - `TX`
 
+## Programmes
+
+- [Initialisation](/LoRaConnection)
+- [Ajout d'une LED](/LoRaConnectionWithLED)
+
 ## Quelques photos
 
 - ![Le transceiver LoRa](/docs/LoRaTransceiver.jpg)
-- ![La connexion du trasnceiver à une carte Arduino](/docs/LoRa_connection.jpg) avec une potentiomètre.
+- ![La connexion du transceiver à une carte Arduino](/docs/LoRa_connection.jpg) avec un potentiomètre.
+- ![La LED qui s'allume](/docs/LoRa_connection.jpg) selon la valeur du potentiomètre.
