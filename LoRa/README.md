@@ -24,3 +24,4 @@ On a un module LoRa [RN2483](/docs/RN2483_datasheet.pdf) dont on va souder seule
 - ![Le transceiver LoRa](/docs/LoRaTransceiver.jpg)
 - ![La connexion du transceiver à une carte Arduino](/docs/LoRa_connection.jpg) avec un potentiomètre.
 - ![La LED qui s'allume](/docs/LoRa_connection.jpg) selon la valeur du potentiomètre.
+- ![Les données reçues](/docs/received.png) sur Chirpstack

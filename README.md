@@ -80,10 +80,20 @@ Voici, étape par étape, le travail que nous avons effectué pour fabriquer not
 
 Lors des TP d'Analog Electronic Labs, on a modélisé sur LTSpice un amplificateur. On peut le tretrouver [ici](/LTSpice/ampliyoplait_avec_capteur.asc).
 
-## Conception du PCB via KiCAD
+Nous avons également mis en place l'amplificateur en banc de test [ici](/docs/montage_ampliop.png).
 
 ## Programmation du capteur et transmission via LoRa
 
+### Montage et soudure du banc de test
+
+Nous avons soudé et monté un transceiver LoRa pour notre réseau. Les détails de ces étapes sont accessibles [ici](/LoRa/README.md). 
+
+Nous avons également testé électriquement avec un wattmètre notre soudure.
+
+### Transmission LoRa
+
 Les communications sont accessibles sur [https://srv-chirpstack.insa-toulouse.fr](chirpstack).
+
+## Conception du PCB via KiCAD
 
 ## Node-RED?

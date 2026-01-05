@@ -80,6 +80,6 @@ void loop()
         digitalWrite(LedPin, LOW);
     }
     // Envoyer via LoRa
-    //commLoRa(String(sensorValue));
-    //delay(10000); // Attendre 10 secondes avant le prochain envoi
+    commLoRa(String(sensorValue));
+    delay(10000); // Attendre 10 secondes avant le prochain envoi
 }
