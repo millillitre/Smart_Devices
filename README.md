@@ -9,7 +9,6 @@ Dans ce repo, vous pourrez trouver:
 - sur la branche *main*:
   - Les fichiers de simulation [LTSpice](/LTSpice/)
   - Les fichiers de schémas et de routage [KiCad](/KiCAD/)
-  - Le [code Arduino](/Arduino/) pour le capteur
   - Le montage du [transceiver LoRa](/LoRa) pour notre réseau et sa [configuration arduino](/LoRa/LoRaConnection.ino).
   - Le [TP](/MIT_App/) sur la partie application android avec MIT_App.
   - La datasheet de notre capteur.
