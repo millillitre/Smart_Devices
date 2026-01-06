@@ -102,6 +102,6 @@ Nous avons développé un tableau de bord avec [Node-RED](/NodeRED/) pour visual
     - une jauge indiquant la position de cette valeur par rapport aux seuils minimum et maximum de gaz détectables par le capteur,
     - ainsi que la variation de la quantité de gaz.
 
-![Node-RED dashboard](/docs/gauge.png)
+<img src="/docs/gauge.png" width="162" height="273"/>
 
 ## MIT Application
