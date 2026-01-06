@@ -85,7 +85,7 @@ Nous avons également mis en place l'amplificateur en banc de test [ici](/docs/m
 
 ### Montage et soudure du banc de test
 
-Nous avons soudé et monté un transceiver LoRa pour notre réseau. Les détails de ces étapes sont accessibles [ici](/LoRa/README.md). 
+Nous avons soudé et monté un transceiver LoRa pour notre réseau. Les détails de ces étapes sont accessibles [ici](/LoRa/README.md).
 
 Nous avons également testé électriquement avec un wattmètre notre soudure.
 
@@ -102,6 +102,8 @@ Nous avons développé un tableau de bord avec [Node-RED](/NodeRED/) pour visual
     - une jauge indiquant la position de cette valeur par rapport aux seuils minimum et maximum de gaz détectables par le capteur,
     - ainsi que la variation de la quantité de gaz.
 
+<center>
 <img src="/docs/gauge.png" width="324" height="546"/>
+</center>
 
 ## MIT Application
