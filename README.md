@@ -95,4 +95,13 @@ Les communications sont accessibles sur [https://srv-chirpstack.insa-toulouse.fr
 
 ## Conception du PCB via KiCAD
 
-## Node-RED?
+## Node-RED
+
+Nous avons développé un tableau de bord avec [Node-RED](/NodeRED/) pour visualiser les données transmises via LoRa. Ce tableau de bord simple affiche :
+    - la dernière valeur mesurée,
+    - une jauge indiquant la position de cette valeur par rapport aux seuils minimum et maximum de gaz détectables par le capteur,
+    - ainsi que la variation de la quantité de gaz.
+
+![Node-RED dashboard](/docs/gauge.png)
+
+## MIT Application
