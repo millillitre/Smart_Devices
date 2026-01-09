@@ -1,0 +1,98 @@
+[
+    {
+        "id": "flow_appinventor",
+        "type": "tab",
+        "label": "Flux App Inventor",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "mqtt_in",
+        "type": "mqtt in",
+        "z": "flow_appinventor",
+        "name": "ChirpstackBroker",
+        "topic": "application/1a3fddf5-f12c-4bbb-85ee-c940d8f4d68a/device/0004a30b0110c3e3/event/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "chirpstack_broker",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            ["base64_decode"]
+        ]
+    },
+    {
+        "id": "base64_decode",
+        "type": "base64",
+        "z": "flow_appinventor",
+        "name": "Décodage base64",
+        "action": "b64",
+        "property": "payload.data",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            ["store_payload"]
+        ]
+    },
+    {
+        "id": "store_payload",
+        "type": "function",
+        "z": "flow_appinventor",
+        "name": "Stocker la valeur",
+        "func": "// On stocke la dernière valeur globalement\nflow.set('last_value', msg.payload.data);\nreturn msg;",
+        "outputs": 1,
+        "x": 550,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "http_in",
+        "type": "http in",
+        "z": "flow_appinventor",
+        "name": "HTTP endpoint /sensor",
+        "url": "/sensor",
+        "method": "get",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            ["prepare_json"]
+        ]
+    },
+    {
+        "id": "prepare_json",
+        "type": "function",
+        "z": "flow_appinventor",
+        "name": "Préparer JSON",
+        "func": "// Récupère la dernière valeur stockée\nvar value = flow.get('last_value') || 0;\nmsg.headers = {\"Content-Type\": \"application/json\"};\nmsg.payload = {\"value\": value, \"time\": new Date().toISOString()};\nreturn msg;",
+        "outputs": 1,
+        "x": 350,
+        "y": 400,
+        "wires": [
+            ["http_response"]
+        ]
+    },
+    {
+        "id": "http_response",
+        "type": "http response",
+        "z": "flow_appinventor",
+        "name": "",
+        "x": 550,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "chirpstack_broker",
+        "type": "mqtt-broker",
+        "name": "ChirpStack",
+        "broker": "srv-chirpstack.insa-toulouse.fr",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true
+    }
+]
