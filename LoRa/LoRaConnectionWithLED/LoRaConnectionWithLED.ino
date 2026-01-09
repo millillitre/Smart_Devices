@@ -1,5 +1,4 @@
 #include <SoftwareSerial.h>
-#include <SPI.h>
 #include <rn2xx3.h> //https://github.com/jpmeijers/RN2483-Arduino-Library/blob/master/src/rn2xx3.h
 
 

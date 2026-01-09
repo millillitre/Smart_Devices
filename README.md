@@ -10,7 +10,7 @@ Dans ce repo, vous pourrez trouver:
   - Les fichiers de schémas et de routage [KiCad](/KiCAD/)
   - Les fichiers de simulation [LTSpice](/LTSpice/)
   - Le montage du [transceiver LoRa](/LoRa) pour notre réseau et sa [configuration arduino](/LoRa/LoRaConnection.ino).
-  - Les configurations [MIT_App](/MIT_App/) sur la partie application android.
+  - Les configurations [MIT_App](/MIT_App/) sur la partie application.
   - Les fichiers de configuration [Node-RED](/NodeRED/)
   - Les différents [documents](/docs/) (photos, screenshots) utilisés pour appuyer notre propos.
   - La licence *Creative Commons*
@@ -28,11 +28,7 @@ Pour effectuer le projet, nous avons utilisé:
 
 ### Communication
 
-Pour obtenir les données via LoRa, nous avons eu besoin d'un accès à une gateway LoRa and un serveur (Chirpstack de l'INSA Toylouse dans notre cas)
-
-### Résultats
-
-????????????????????????????????????????????????????????
+Pour obtenir les données via LoRa, nous avons eu besoin d'un accès à une gateway LoRa and un serveur (Chirpstack de l'INSA Toulouse dans notre cas)
 
 ## Le capteur de GAZ effectué à l'AIME
 
@@ -112,7 +108,23 @@ Nous avons également testé électriquement avec un wattmètre notre soudure.
 Les communications sont accessibles sur [https://srv-chirpstack.insa-toulouse.fr](chirpstack).
 
 ## Conception du PCB via KiCAD
-????????????????????????????????????????????????????????
+Nous avons suivi les instructions de M.Biganzoli, et nous avons décidé de faire une seule face, pour ne pas avoir de via et éviter d'avoir à connecter par nous me^me l'autre côté à l'aide de fils. 
+
+Les fichiers du PCB sont trouvables [ici](/KiCAD/kicad-roger-shield-uno/).
+
+<p align="center">
+  <img src="/docs/pcbKICAD.png" width="324" alt="Design du PCB" />
+</p>
+
+Nous avons pu ensuite l'imprimer avec Cathy et nous avons percé un à un les trous. Nous avons également souder par la suite. Ci-dessous notre PCB imprimé et le montage:
+
+<p align="center">
+  <img src="/docs/pcb.png" width="324" alt="Impression du PCB" />
+</p>
+
+<p align="center">
+  <img src="/docs/final.png" width="324" alt="Montage final" />
+</p>
 
 ## Node-RED
 
@@ -126,4 +138,8 @@ Nous avons développé un tableau de bord avec [Node-RED](/NodeRED/) pour visual
 </p>
 
 ## MIT Application
-????????????????????????????????????????????????????????
+Nous avons mis en place une application pour mobile via MIT App, elle se trouve [ici](/MIT_App/Application/). L'idée de cette application est d'afficher la valeur du capteur de gaz en temps réel, qui change de coucleur si la valeur est critique et qui affiche un graphe d'évolution des valeurs.
+
+<p align="center">
+  <img src="/docs/application.png" width="324" alt="Application mobile" />
+</p>
