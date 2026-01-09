@@ -119,7 +119,7 @@ Les fichiers du PCB sont trouvables [ici](/KiCAD/kicad-roger-shield-uno/).
 Nous avons pu ensuite l'imprimer avec Cathy et nous avons percé un à un les trous. Nous avons également souder par la suite. Ci-dessous notre PCB imprimé et le montage:
 
 <p align="center">
-  <img src="/docs/pcb.png" width="324" alt="Impression du PCB" />
+  <img src="/docs/pcb.jpg" width="324" alt="Impression du PCB" />
 </p>
 
 <p align="center">
