@@ -123,7 +123,7 @@ Nous avons pu ensuite l'imprimer avec Cathy et nous avons percé un à un les tr
 </p>
 
 <p align="center">
-  <img src="/docs/final.png" width="324" alt="Montage final" />
+  <img src="https://github.com/millillitre/Smart_Devices/blob/main/docs/Montage_final.gif" width="324" alt="Impression du PCB" />
 </p>
 
 ## Node-RED
