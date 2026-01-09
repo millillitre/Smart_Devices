@@ -142,6 +142,17 @@ Ensuite nous avons continué notre développement ([flows2.json](/NodeRED/flows2
 ## MIT Application
 Nous avons mis en place une application pour mobile via MIT App, elle se trouve [ici](/MIT_App/Application/). L'idée de cette application est d'afficher la valeur du capteur de gaz en temps réel, qui change de coucleur si la valeur est critique et qui affiche un graphe d'évolution des valeurs.
 
+- Valeur sous le seuil critique :
 <p align="center">
-  <img src="/docs/application.png" width="324" alt="Application mobile" />
+  <img src="/docs/vert.png" width="324" alt="Vert" />
+</p>
+
+- Valeur au dessus du seuil critique :
+<p align="center">
+  <img src="/docs/rouge.png" width="324" alt="Rouge" />
+</p>
+
+- Visualisation graphique :
+<p align="center">
+  <img src="/docs/graph.png" width="324" alt="Graphe" />
 </p>
