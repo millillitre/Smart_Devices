@@ -128,7 +128,7 @@ Nous avons pu ensuite l'imprimer avec Cathy et nous avons percé un à un les tr
 
 ## Node-RED
 
-Nous avons développé un tableau de bord avec [Node-RED](/NodeRED/) pour visualiser les données transmises via LoRa. Ce tableau de bord simple affiche :
+Nous avons développé un tableau de bord avec [Node-RED](/NodeRED/flows.json) pour visualiser les données transmises via LoRa. Ce tableau de bord simple affiche :
     - la dernière valeur mesurée,
     - une jauge indiquant la position de cette valeur par rapport aux seuils minimum et maximum de gaz détectables par le capteur,
     - ainsi que la variation de la quantité de gaz.
@@ -136,6 +136,8 @@ Nous avons développé un tableau de bord avec [Node-RED](/NodeRED/) pour visual
 <p align="center">
   <img src="/docs/gauge.png" width="324" alt="Jauge de mesure" />
 </p>
+
+Ensuite nous avons continué notre développement ([flows2.json](/NodeRED/flows2.json)) en ajoutant une partie pour créer un fichier json pour envoyer en http la valeur du capteur pour permettre à celle-ci d'être récupérée par l'application mentionnée dans la partie suivante.
 
 ## MIT Application
 Nous avons mis en place une application pour mobile via MIT App, elle se trouve [ici](/MIT_App/Application/). L'idée de cette application est d'afficher la valeur du capteur de gaz en temps réel, qui change de coucleur si la valeur est critique et qui affiche un graphe d'évolution des valeurs.
